@@ -1,0 +1,14 @@
+.currencyCard {
+  text-align: center;
+  margin: 20px;
+}
+
+.currencyCard p {
+  margin: 0;
+}
+
+.flag {
+  width: 200px;
+  height: 150px;
+  border:1px solid;
+}

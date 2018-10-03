@@ -1,1 +1,6 @@
-<app-registre></app-registre>
+<div class="form-group">
+<input type="text " name="money"  (keyup)="getCurrency($event)" placeholder="Money" class="form-control m-2">
+  </div>
+<div class="main container" >
+  <app-currency-card appSelectCard *ngFor="let country of countries let i = index" [country]="country" [money]="currencyValue"></app-currency-card>
+</div>

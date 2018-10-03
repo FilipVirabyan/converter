@@ -1,14 +1,14 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {FormsModule} from "@angular/forms";
-import { RegistreComponent } from './components/registre/registre.component';
+import { CurrencyCardComponent } from './components/currency-card/currency-card.component';
+import { SelectCardDirective } from './directives/select-card.directive';
+
 
 @NgModule({
   imports: [
-    CommonModule,
-      FormsModule
+    CommonModule
   ],
-  declarations: [RegistreComponent],
-    exports:[RegistreComponent]
+  declarations: [CurrencyCardComponent, SelectCardDirective],
+  exports: [CurrencyCardComponent, SelectCardDirective]
 })
 export class SharedModule { }
